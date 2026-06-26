@@ -4,115 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yawphame | Web Designer & Developer</title>
-    <style>
-        :root {
-            --primary: #2563eb;
-            --dark: #111827;
-            --light: #f8fafc;
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', system-ui, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: var(--light);
-        }
-        header {
-            background: linear-gradient(135deg, var(--dark), #1e3a8a);
-            color: white;
-            text-align: center;
-            padding: 120px 20px 80px;
-        }
-        h1 { font-size: 3.5rem; margin-bottom: 10px; }
-        h2 { font-size: 2.2rem; margin: 40px 0 20px; text-align: center; }
-        p { margin-bottom: 20px; }
-        .tagline { font-size: 1.4rem; opacity: 0.95; margin-bottom: 30px; }
-        .cta {
-            display: inline-block;
-            background: var(--primary);
-            color: white;
-            padding: 14px 32px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-        nav {
-            background: white;
-            position: sticky;
-            top: 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            z-index: 100;
-        }
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            padding: 15px 0;
-        }
-        nav a {
-            margin: 0 20px;
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-        }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-            gap: 30px;
-            padding: 40px 0;
-        }
-        .project-card {
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-        .project-card:hover { transform: translateY(-10px); }
-        .project-card img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-        }
-        .project-info {
-            padding: 20px;
-        }
-        .project-info h3 { margin-bottom: 10px; }
-        .links {
-            margin-top: 15px;
-        }
-        .links a {
-            color: var(--primary);
-            text-decoration: none;
-            margin-right: 15px;
-            font-weight: 500;
-        }
-        .about {
-            background: white;
-            padding: 80px 0;
-            text-align: center;
-        }
-        .services {
-            background: #f1f5f9;
-            padding: 80px 0;
-        }
-        .service-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-        }
-        footer {
-            background: var(--dark);
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-        }
-        @media (max-width: 768px) {
-            h1 { font-size: 2.8rem; }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav>
@@ -139,10 +31,8 @@
     <section id="about" class="about">
         <div class="container">
             <h2>About Me</h2>
-            <p style="max-width: 700px; margin: 0 auto; font-size: 1.1rem;">
-                I'm a passionate web designer and developer specializing in building modern, mobile-friendly websites for local businesses. 
-                From banks to roofing companies, I focus on designs that are both beautiful and effective at turning visitors into customers.
-            </p>
+            <p>I'm a passionate web designer and developer specializing in building modern, mobile-friendly websites for local businesses. 
+               From banks to roofing companies, I focus on designs that are both beautiful and effective at turning visitors into customers.</p>
         </div>
     </section>
 
@@ -152,7 +42,7 @@
 
             <!-- NorthBridge Bank -->
             <div class="project-card">
-                <img src="https://picsum.photos/id/1015/600/300" alt="NorthBridge Bank" onerror="this.src='https://via.placeholder.com/600x300?text=NorthBridge+Bank'">
+                <img src="https://picsum.photos/id/1015/600/300" alt="NorthBridge Bank">
                 <div class="project-info">
                     <h3>NorthBridge Bank</h3>
                     <p>Professional banking website with clean UI focused on trust and accessibility.</p>
@@ -165,7 +55,7 @@
 
             <!-- Ez-Roofing -->
             <div class="project-card">
-                <img src="https://picsum.photos/id/1016/600/300" alt="Ez Roofing" onerror="this.src='https://via.placeholder.com/600x300?text=Ez+Roofing'">
+                <img src="https://picsum.photos/id/1016/600/300" alt="Ez Roofing">
                 <div class="project-info">
                     <h3>Ez-Roofing</h3>
                     <p>Modern roofing company website showcasing services and building customer confidence.</p>
@@ -178,7 +68,7 @@
 
             <!-- All-Image-Roofing -->
             <div class="project-card">
-                <img src="https://picsum.photos/id/133/600/300" alt="All Image Roofing" onerror="this.src='https://via.placeholder.com/600x300?text=All+Image+Roofing'">
+                <img src="https://picsum.photos/id/133/600/300" alt="All Image Roofing">
                 <div class="project-info">
                     <h3>All-Image-Roofing</h3>
                     <p>High-quality roofing services site with strong visual presentation.</p>
@@ -191,7 +81,7 @@
 
             <!-- Southern-Metal-Roofing -->
             <div class="project-card">
-                <img src="https://picsum.photos/id/201/600/300" alt="Southern Metal Roofing" onerror="this.src='https://via.placeholder.com/600x300?text=Southern+Metal+Roofing'">
+                <img src="https://picsum.photos/id/201/600/300" alt="Southern Metal Roofing">
                 <div class="project-info">
                     <h3>Southern-Metal-Roofing</h3>
                     <p>Specialized metal roofing website emphasizing durability and expertise.</p>
@@ -204,7 +94,7 @@
 
             <!-- Arizona-Roof-Rescue -->
             <div class="project-card">
-                <img src="https://picsum.photos/id/251/600/300" alt="Arizona Roof Rescue" onerror="this.src='https://via.placeholder.com/600x300?text=Arizona+Roof+Rescue'">
+                <img src="https://picsum.photos/id/251/600/300" alt="Arizona Roof Rescue">
                 <div class="project-info">
                     <h3>Arizona-Roof-Rescue</h3>
                     <p>Emergency and standard roofing services website designed for quick client contact.</p>
@@ -244,10 +134,10 @@
     <footer id="contact">
         <div class="container">
             <h2>Let's Work Together</h2>
-            <p style="margin: 20px 0;">Have a project in mind? I'm available for freelance work.</p>
-            <p><strong>Email:</strong> your.email@example.com (replace with yours)</p>
-            <p><strong>GitHub:</strong> <a href="https://github.com/Yawphame" style="color: #60a5fa;">@Yawphame</a></p>
-            <p style="margin-top: 40px; opacity: 0.8;">© 2026 Yawphame. All Rights Reserved.</p>
+            <p>Have a project in mind? I'm available for freelance work.</p>
+            <p><strong>Email:</strong> your.email@example.com</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/Yawphame">@Yawphame</a></p>
+            <p>© 2026 Yawphame. All Rights Reserved.</p>
         </div>
     </footer>
 </body>
