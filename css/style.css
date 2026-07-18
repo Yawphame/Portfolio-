@@ -482,7 +482,7 @@ section{
 }
 
 .about-text strong{
-    color:var(--white);
+    color:#fff;
 }
 
 .about-info{
@@ -528,63 +528,92 @@ section{
 
 }
 
-<!-- ================= SKILLS ================= -->
-<section class="skills" id="skills">
+/*==========================================
+                SKILLS
+==========================================*/
 
-    <div class="container">
+.skills{
+    background:var(--bg);
+}
 
-        <div class="section-title">
-            <span>My Expertise</span>
-            <h2>Technologies & Skills</h2>
-            <p>
-                I use modern web technologies to create fast, responsive, and
-                visually appealing websites that deliver a seamless user experience.
-            </p>
-        </div>
+.section-title{
+    text-align:center;
+    margin-bottom:70px;
+}
 
-        <div class="skills-grid">
+.section-title span{
+    display:inline-block;
+    color:var(--primary);
+    font-size:.95rem;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:12px;
+}
 
-            <div class="skill-card">
-                <i class="fa-brands fa-html5"></i>
-                <h3>HTML5</h3>
-                <p>Building semantic, accessible, and well-structured web pages.</p>
-            </div>
+.section-title h2{
+    font-size:2.7rem;
+    margin-bottom:18px;
+}
 
-            <div class="skill-card">
-                <i class="fa-brands fa-css3-alt"></i>
-                <h3>CSS3</h3>
-                <p>Creating modern layouts, animations, and responsive designs.</p>
-            </div>
+.section-title p{
+    max-width:700px;
+    margin:auto;
+    color:var(--gray);
+}
 
-            <div class="skill-card">
-                <i class="fa-brands fa-js"></i>
-                <h3>JavaScript</h3>
-                <p>Adding dynamic functionality and engaging user interactions.</p>
-            </div>
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
 
-            <div class="skill-card">
-                <i class="fa-brands fa-github"></i>
-                <h3>GitHub</h3>
-                <p>Managing projects with version control and collaborative workflows.</p>
-            </div>
+.skill-card{
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    padding:40px 30px;
+    text-align:center;
+    transition:.35s ease;
+}
 
-            <div class="skill-card">
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                <h3>Responsive Design</h3>
-                <p>Delivering websites that perform beautifully on every device.</p>
-            </div>
+.skill-card:hover{
+    transform:translateY(-10px);
+    border-color:rgba(59,130,246,.35);
+    box-shadow:0 20px 45px rgba(0,0,0,.35);
+}
 
-            <div class="skill-card">
-                <i class="fa-solid fa-gauge-high"></i>
-                <h3>Performance</h3>
-                <p>Optimizing websites for speed, efficiency, and a smooth user experience.</p>
-            </div>
+.skill-card i{
+    font-size:3rem;
+    margin-bottom:22px;
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
 
-        </div>
+.skill-card h3{
+    font-size:1.35rem;
+    margin-bottom:12px;
+}
 
-    </div>
+.skill-card p{
+    color:var(--gray);
+    font-size:.96rem;
+    line-height:1.7;
+}
 
-</section>
+@media(max-width:900px){
+
+    .section-title h2{
+        font-size:2.1rem;
+    }
+
+    .skills-grid{
+        grid-template-columns:1fr;
+    }
+
+}
 
 /*==========================================
             FEATURED PROJECTS
@@ -934,7 +963,7 @@ section{
 
 .contact-item a:hover{
 
-    color:var(--white);
+    color:#fff;
 
 }
 
