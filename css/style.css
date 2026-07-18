@@ -802,25 +802,28 @@ section{
 }
 
 .project-links{
-
     display:flex;
-
-    gap:20px;
-
+    gap:16px;
+    flex-wrap:wrap;
+    margin-top:20px;
 }
 
 .project-links a{
-
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:12px 24px;
+    border-radius:12px;
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+    color:#fff;
     font-weight:600;
-
-    transition:.3s;
-
+    transition:.35s ease;
+    box-shadow:0 10px 25px rgba(59,130,246,.3);
 }
 
 .project-links a:hover{
-
-    color:var(--primary);
-
+    transform:translateY(-3px);
+    box-shadow:0 15px 35px rgba(59,130,246,.45);
 }
 
 @media(max-width:900px){
